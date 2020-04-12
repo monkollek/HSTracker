@@ -5,7 +5,7 @@ git clone -b macos-test https://github.com/HearthSim/HDT-Localization Translatio
 ./scripts/cards_download.sh
 
 # Clone Arcane-Tracker for kotlin-hslog
-git clone https://github.com/HearthSim/Arcane-Tracker Arcane-Tracker
+git clone https://github.com/monkollek/Arcane-Tracker.git Arcane-Tracker
 
 # build the framework file
-./Arcane-Tracker/gradlew -p Arcane-Tracker linkReleaseFrameworkMacosX64
+./Arcane-Tracker/gradlew -p Arcane-Tracker linkReleaseFrameworkMacosX64 -Dorg.gradle.jvmargs=-Xmx4g
